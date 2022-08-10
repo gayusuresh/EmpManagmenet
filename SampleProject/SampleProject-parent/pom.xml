@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.demo</groupId>
+	<artifactId>SampleProject-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>../SampleProject-bar</module>
+		<module>../SampleProject-mset</module>
+		<module>../SampleProject-subflow</module>
+		<module>../SampleProject-flow</module>
+		<module>../SampleProject-java</module>
+		<module>../SampleProject-uebergabe</module>
+	</modules>
+
+	<scm>
+		<developerConnection>
+			scm:svn:http://svn.sbb.ch/integration/com.demo/SampleProject/trunk/SampleProject-parent
+		</developerConnection>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>hosted.wmb.releases</id>
+			<url>http://repo.sbb.ch/content/repositories/hosted.wmb.releases/
+			</url>
+		</repository>
+		<snapshotRepository>
+			<id>hosted.wmb.snapshots</id>
+			<url>http://repo.sbb.ch/content/repositories/hosted.wmb.snapshots
+			</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>ch.sbb.maven.plugins</groupId>
+				<artifactId>iib-maven-plugin</artifactId>
+				<version>1.0</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

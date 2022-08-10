@@ -1,0 +1,25 @@
+package lambadaexpression;
+
+public class Demo implements Drawable
+{
+	@Override
+	public void draw() 
+	{
+		int width=10;
+		System.out.println(width);
+		
+	}
+	public static void main(String[] args) 
+	{
+     Demo d=new Demo();
+     d.draw();
+	
+
+	
+	
+		
+	}
+
+	
+
+}

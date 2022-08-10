@@ -1,0 +1,32 @@
+package thread;
+
+public class DemoThreads extends Thread
+{
+	public void run()
+	{
+		for(int i=0;i<5;i++)
+		{
+		System.out.println("hai");
+		try
+		{
+			Thread.sleep(2000);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		}
+	}
+
+	public static void main(String[] args) 
+	{
+		DemoThreads d=new DemoThreads();
+		d.start();
+		DemoThreads d1=new DemoThreads();
+		d1.start();
+      
+
+
+	}
+
+}

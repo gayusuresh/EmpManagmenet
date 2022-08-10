@@ -1,0 +1,44 @@
+package Files;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentFileReader 
+{
+	public void read() throws IOException
+	{
+	
+	ArrayList<Student>studentlist=new ArrayList<Student>();
+	
+	FileReader f=new FileReader("d:/student.csv");
+	BufferedReader br=new BufferedReader(f);
+	String col=br.readLine();
+	String row=br.readLine();
+	while(row!=null)
+	{
+		Student stu=createStudent(row);
+		studentlist.add(stu);
+		row=br.readLine();
+	}
+	System.out.println("print");
+	for(Student s:studentlist)
+	{
+		System.out.println(s);
+	}
+	}
+
+	private Student createStudent(String row) {
+		String []data=row.split(",");
+		int id=Integer.parseInt(data[0]);
+		String name=data[1];
+		String address=data[2];
+		Student stu=new Student(id,name,address);
+		return stu;
+	}
+	
+
+}

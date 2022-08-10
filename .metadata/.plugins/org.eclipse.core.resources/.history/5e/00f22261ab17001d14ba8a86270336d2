@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentAdd
+{
+	public void addData()
+	{
+		List<Student>list=new ArrayList<Student>();
+		Student s1=new Student(1,"gayathri","kknagar");
+		Student s2=new Student(1,"gayathri","kknagar");
+		Student s3=new Student(1,"gayathri","kknagar");
+		list.add(s1);
+		list.add(s2);
+		list.add(s3);
+		for(Student s:list)
+		{
+			System.out.println(s);
+		}
+	}
+
+}

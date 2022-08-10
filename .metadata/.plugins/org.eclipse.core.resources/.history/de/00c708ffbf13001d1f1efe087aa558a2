@@ -1,0 +1,16 @@
+package thread;
+
+public class MultiThread {
+
+	public static void main(String[] args)
+	{
+		Table t=new Table();
+		First f=new First(t);
+		f.start();
+	
+		Second s=new Second(t);
+		s.start();
+
+	}
+
+}

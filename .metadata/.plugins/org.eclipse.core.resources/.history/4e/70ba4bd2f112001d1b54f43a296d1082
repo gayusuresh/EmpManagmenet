@@ -1,0 +1,18 @@
+package Files;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class BufferReaderExample {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		FileReader fr=new FileReader("d:/student.csv");
+		int i=0;
+		while(i!=-1)
+		{
+			System.out.println((char)i);
+		}
+
+	}
+
+}

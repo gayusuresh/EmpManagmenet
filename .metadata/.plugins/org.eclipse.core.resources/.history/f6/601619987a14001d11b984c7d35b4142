@@ -1,0 +1,22 @@
+package thread;
+
+public class MultiThread {
+
+	public static void main(String[] args)
+	{
+		Table t=new Table();
+		First f=new First(t);
+		
+		f.start();
+		f.setName("one");
+		System.out.println(f.getName());
+	
+		Second s=new Second(t);
+		
+		s.start();
+		s.setName("two");
+		System.out.println(s.getName());
+
+	}
+
+}

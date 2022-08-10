@@ -1,0 +1,20 @@
+package Files;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentFileReader 
+{
+	public void read()
+	{
+	Student s1=new Student(1001,"gayathri","CBE");
+	Student s2=new Student(1002,"ravi","HYD");
+	Student s3=new Student(1003,"hari","Banglore");
+	ArrayList<Student>studentlist=new ArrayList<Student>();
+	studentlist.add(s1);
+	studentlist.add(s2);
+	studentlist.add(s3);
+	}
+	
+
+}

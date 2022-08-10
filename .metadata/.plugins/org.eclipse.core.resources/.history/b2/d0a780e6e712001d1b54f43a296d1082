@@ -1,0 +1,17 @@
+package Files;
+
+import java.io.FileOutputStream;
+
+public class FileDemoExample {
+
+	public static void main(String[] args) {
+		FileOutputStream fout=new FileOutputStream("d:/A.txt");
+		String s="hello";
+		byte b[]s.getBytes();
+		fout.write(b);
+		System.out.println("created");
+				
+
+	}
+
+}

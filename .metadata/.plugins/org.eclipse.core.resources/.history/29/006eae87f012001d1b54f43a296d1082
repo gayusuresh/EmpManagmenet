@@ -1,0 +1,17 @@
+package Files;
+
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class DemoBuffer {
+
+	public static void main(String[] args) throws IOException {
+	FileWriter fw=new FileWriter("d:/student.csv");
+	fw.write("id,name,Address");
+	fw.close();
+	
+
+	}
+
+}

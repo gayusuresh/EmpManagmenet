@@ -1,0 +1,13 @@
+package lambadaexpression;
+
+public class AddMain {
+
+	public static void main(String[] args) {
+		Addable a=(int x,int y)->{
+			(x+y);
+		};
+      System.out.println(a.add(3, 4));
+      
+	}
+
+}

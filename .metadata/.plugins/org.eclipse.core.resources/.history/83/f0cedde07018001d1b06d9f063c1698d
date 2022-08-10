@@ -1,0 +1,14 @@
+package lambadaexpression;
+
+public class CubeMain {
+
+	public static void main(String[] args) {
+      Cube c=(int x)->{(x*x*x)
+    		  
+      
+      };
+  	System.out.println(c.calculate(3));  
+
+	}
+
+}
